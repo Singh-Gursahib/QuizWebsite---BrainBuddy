@@ -1,0 +1,56 @@
+[
+    {
+        "question": "What is a data structure?",
+        "options": [
+            "A way to organize and store data",
+            "A computer program",
+            "A mathematical equation"
+        ],
+        "answer": "A way to organize and store data"
+    },
+    {
+        "question": "Which data structure uses a last-in, first-out (LIFO) approach?",
+        "options": [
+            "Queue",
+            "Stack",
+            "Linked List"
+        ],
+        "answer": "Stack"
+    },
+    {
+        "question": "What is the primary advantage of using a linked list over an array?",
+        "options": [
+            "Constant-time access to elements",
+            "Dynamic size",
+            "Efficient for searching"
+        ],
+        "answer": "Dynamic size"
+    },
+    {
+        "question": "Which data structure is used to represent a hierarchical structure with parent-child relationships?",
+        "options": [
+            "Stack",
+            "Queue",
+            "Tree"
+        ],
+        "answer": "Tree"
+    },
+    {
+        "question": "What data structure is typically used for implementing a priority queue?",
+        "options": [
+            "Array",
+            "Heap",
+            "Queue"
+        ],
+        "answer": "Heap"
+    },
+    {
+        "question": "Which data structure stores elements in a linear order and allows for efficient insertion and deletion at both ends?",
+        "options": [
+            "Linked List",
+            "Queue",
+            "Heap"
+        ],
+        "answer": "Linked List"
+    } 
+]
