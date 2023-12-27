@@ -52,5 +52,122 @@
             "Heap"
         ],
         "answer": "Linked List"
-    } 
+    } ,
+    {
+        "question": "Which data structure follows the First-In-First-Out (FIFO) order?",
+        "options": [
+            "Stack",
+            "Queue",
+            "Heap"
+        ],
+        "answer": "Queue"
+    },
+    {
+        "question": "What is the time complexity of searching for an element in a balanced binary search tree?",
+        "options": [
+            "O(1)",
+            "O(log n)",
+            "O(n)"
+        ],
+        "answer": "O(log n)"
+    },
+    {
+        "question": "Which data structure is often used to implement a hash table?",
+        "options": [
+            "Array",
+            "Linked List",
+            "Queue"
+        ],
+        "answer": "Array"
+    },
+    {
+        "question": "What is the main advantage of using a hash table for data storage?",
+        "options": [
+            "Constant-time access",
+            "Dynamic resizing",
+            "Efficient for sorting"
+        ],
+        "answer": "Constant-time access"
+    },
+    {
+        "question": "Which data structure is used to maintain a collection of elements with no specific order?",
+        "options": [
+            "Heap",
+            "Queue",
+            "Set"
+        ],
+        "answer": "Set"
+    },
+    {
+        "question": "What is the data structure that consists of a collection of key-value pairs?",
+        "options": [
+            "Queue",
+            "Heap",
+            "Dictionary"
+        ],
+        "answer": "Dictionary"
+    },
+    {
+        "question": "Which data structure allows for efficient searching, insertion, and deletion of elements in a sorted order?",
+        "options": [
+            "Array",
+            "Linked List",
+            "Binary Search Tree"
+        ],
+        "answer": "Binary Search Tree"
+    },
+    {
+        "question": "In a graph data structure, what are the nodes connected by?",
+        "options": [
+            "Edges",
+            "Arrows",
+            "Lines"
+        ],
+        "answer": "Edges"
+    },
+    {
+        "question": "What is the data structure used to represent the shortest path between two nodes in a graph?",
+        "options": [
+            "Queue",
+            "Stack",
+            "Graph"
+        ],
+        "answer": "Queue"
+    },
+    {
+        "question": "Which data structure is a collection of elements with no duplicates?",
+        "options": [
+            "Heap",
+            "Set",
+            "Array"
+        ],
+        "answer": "Set"
+    },
+    {
+        "question": "In a hash table, what is the purpose of the hash function?",
+        "options": [
+            "To store data",
+            "To retrieve data",
+            "To map keys to indices"
+        ],
+        "answer": "To map keys to indices"
+    },
+    {
+        "question": "What data structure is used to implement a breadth-first search algorithm?",
+        "options": [
+            "Stack",
+            "Queue",
+            "Linked List"
+        ],
+        "answer": "Queue"
+    },
+    {
+        "question": "Which data structure is used for efficient retrieval of the maximum and minimum elements?",
+        "options": [
+            "Heap",
+            "Stack",
+            "Queue"
+        ],
+        "answer": "Heap"
+    }
 ]

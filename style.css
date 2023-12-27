@@ -4,20 +4,50 @@ body {
     color: #333333;
     line-height: 1.6;
     margin: 0;
-    padding: 40px;
+    padding: 0; /* Removed padding to allow full width usage */
 }
 
 .container {
-    max-width: 600px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Align children in a column */
+    align-items: center; /* Center children horizontally */
+    /* min-height: 100vh; Minimum height of the viewport */
 }
 
+.header {
+    position: fixed; /* Fixed at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between; /* Space out children */
+    align-items: center; /* Vertically align children in the middle */
+    padding: 10px 20px; /* Padding on all sides */
+    border-bottom: 2px solid #f0f0f0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Adjust the padding-top of the main content to avoid being hidden behind the header */
+.quizcontainer {
+    width: 60%; /* Take up 60% of the screen's width */
+    margin-top: 60px; /* Space from the top, adjust based on the header's height */
+    padding-top: 20px; /* Extra space for the content below the fixed header */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the quiz vertically */
+}
+
+
+
 h1 {
+
     font-size: 24px;
     color: #333333;
-    text-align: center;
-    margin-bottom: 30px;
+    margin: 0; /* Remove bottom margin to handle space within the header */
 }
+
 
 
 .question {
@@ -63,4 +93,97 @@ ul li.incorrect {
 ul li.correct-answer {
     background-color: rgba(0, 255, 0, 0.2);
     border-color: green;
+}
+
+.stopwatch, .scorecard {
+    
+    flex: 0 1 auto;
+    font-size: 20px;
+    margin: 0 20px; 
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+.quizcontainer{
+    max-width: 1000px; /* Adjust the max width as needed */
+    margin: auto; /* Center the container on the page */
+    display: flex; /* Use flexbox to organize children */
+    flex-direction: column; /* Stack children vertically */
+    position: relative; 
+}
+#quiz {
+    flex-basis: 60%;
+    padding-top: 60px;
+    width: 90%;
+    justify-items: center;
+}
+/* Styles for positioning the stopwatch and scorecard */
+#stopwatch {
+    align-self: flex-start;
+}
+
+#scorecard {
+    align-self: flex-start;
+}
+
+
+.submit-button {
+    width: 90%;
+    padding: 15px 30px;
+    margin-bottom: 25px;
+    background-color: #d1a1f5; /* Example primary color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    outline: none; /* Remove the outline to keep the design clean */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Slight shadow for depth */
+}
+.submit-button-container {
+    display: flex;
+    justify-content: center; /* Center the submit button horizontally */
+    width: 60%; /* Match the width of the quiz container */
+    margin: 20px auto; /* Space above and below, and auto margin for centering */
+}
+
+.submit-button:hover, .submit-button:focus {
+    background-color: #bb6cec; /* A slightly darker shade for hover and focus states */
+}
+
+.results {
+    width: 48%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* White background for the results */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Consistent shadow as the button */
+    text-align: center;
+    display: none; /* Initially hidden */
+}
+
+.results h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 24px;
+}
+
+.results p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0; /* Spacing between paragraphs */
+}
+
+
+/* Media Queries for Responsive Adjustments */
+@media (max-width: 600px) {
+    .quizcontainer {
+        width: 100%; /* Full width on smaller screens */
+        margin-top: 60px; /* Adjust if the header height changes */
+    }
 }
