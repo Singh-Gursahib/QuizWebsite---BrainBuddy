@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => {
             console.error('Error fetching quiz data:', error);
             // You can handle errors or display a message to the user here
+            //
         });
 
         function handleOptionClick(li, questionBlock, item) {
