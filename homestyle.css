@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.year-section {
+    margin: 20px;
+}
+
+.year-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.course-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}

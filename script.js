@@ -6,9 +6,14 @@ document.addEventListener('DOMContentLoaded', function() {
     let seconds = 0;
     startTimer(); 
 
+    const urlParams = new URLSearchParams(window.location.search);
+    const courseName = urlParams.get('courseName');
+    const questionDatabase = urlParams.get('questionDatabase');
 
+    // Set the course title
+    document.getElementById('course-title').textContent = courseName;
 
-    fetch('quizData.json') // Replace 'quizData.json' with the path to your file
+    fetch(questionDatabase) 
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);

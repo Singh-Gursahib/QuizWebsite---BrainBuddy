@@ -156,7 +156,7 @@ ul li.correct-answer {
 }
 
 .results {
-    width: 48%;
+    width: 80%;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff; /* White background for the results */
@@ -185,5 +185,8 @@ ul li.correct-answer {
     .quizcontainer {
         width: 100%; /* Full width on smaller screens */
         margin-top: 60px; /* Adjust if the header height changes */
+    }
+    h1 {
+        display: none; 
     }
 }
