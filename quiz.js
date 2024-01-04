@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     let score = 0;
-
-    // Stopwatch code
     let timer;
     let seconds = 0;
+    let subtopicRecord = [];
+
     startTimer(); 
 
     const urlParams = new URLSearchParams(window.location.search);
@@ -21,6 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
             return response.json();
         })
         .then(quizData => {
+            quizData.forEach(item => {
+                updateSubtopicRecord(item['sub-topic'],true, false);
+            });
 
             const quizContainer = document.getElementById('quiz');
             quizData.forEach((item, index) => {
@@ -63,6 +66,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 li.classList.add('incorrect');
                 highlightCorrectAnswer(questionBlock, item.answer);
             }
+
+            // Update the record when an answer is selected
+             updateSubtopicRecord(item['sub-topic'],false,  li.textContent === item.answer);
         }
     
         function disableOptions(questionBlock) {
@@ -130,6 +136,9 @@ function handleSubmitOrRetake() {
             top: document.body.scrollHeight,
             behavior: 'smooth' // Optional: Add smooth scrolling effect
         });
+        //debug
+        console.log(subtopicRecord);
+
     } else {
         window.scrollTo({
             top: document.body.scrollTop,
@@ -138,6 +147,28 @@ function handleSubmitOrRetake() {
         });
         setTimeout(() => {
         location.reload();},900);
+    }
+}
+
+// Function to update the subtopic record
+function updateSubtopicRecord(subtopic, isNewEntry, isCorrect) {
+    let subtopicEntry = subtopicRecord.find(entry => entry.subtopic === subtopic);
+
+    if (!subtopicEntry) {
+        subtopicEntry = { subtopic: subtopic, correct: 0, incorrect: 0, unanswered: 1 };
+        subtopicRecord.push(subtopicEntry);
+    } else {
+        if(isNewEntry){
+            subtopicEntry.unanswered++;
+        }
+        else{
+            subtopicEntry.unanswered--;
+        if (isCorrect) {
+            subtopicEntry.correct++;
+        } else {
+            subtopicEntry.incorrect++;
+        }
+        }        
     }
 }
 

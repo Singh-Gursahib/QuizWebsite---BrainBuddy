@@ -1,6 +1,8 @@
 [
     {
         "question": "What is a data structure?",
+        "sub-topic": "Introduction to Data Structures",
+        "difficulty": "Easy",
         "options": [
             "A way to organize and store data",
             "A computer program",
@@ -10,6 +12,8 @@
     },
     {
         "question": "Which data structure uses a last-in, first-out (LIFO) approach?",
+        "sub-topic": "Stacks",
+        "difficulty": "Medium",
         "options": [
             "Queue",
             "Stack",
@@ -19,6 +23,8 @@
     },
     {
         "question": "What is the primary advantage of using a linked list over an array?",
+        "sub-topic": "Linked Lists",
+        "difficulty": "Medium",
         "options": [
             "Constant-time access to elements",
             "Dynamic size",
@@ -28,6 +34,8 @@
     },
     {
         "question": "Which data structure is used to represent a hierarchical structure with parent-child relationships?",
+        "sub-topic": "Trees",
+        "difficulty": "Medium",
         "options": [
             "Stack",
             "Queue",
@@ -37,6 +45,8 @@
     },
     {
         "question": "What data structure is typically used for implementing a priority queue?",
+        "sub-topic": "Heaps",
+        "difficulty": "Medium",
         "options": [
             "Array",
             "Heap",
@@ -46,15 +56,19 @@
     },
     {
         "question": "Which data structure stores elements in a linear order and allows for efficient insertion and deletion at both ends?",
+        "sub-topic": "Linked Lists",
+        "difficulty": "Medium",
         "options": [
             "Linked List",
             "Queue",
             "Heap"
         ],
         "answer": "Linked List"
-    } ,
+    },
     {
         "question": "Which data structure follows the First-In-First-Out (FIFO) order?",
+        "sub-topic": "Queues",
+        "difficulty": "Medium",
         "options": [
             "Stack",
             "Queue",
@@ -64,6 +78,8 @@
     },
     {
         "question": "What is the time complexity of searching for an element in a balanced binary search tree?",
+        "sub-topic": "Binary Search Trees",
+        "difficulty": "Medium",
         "options": [
             "O(1)",
             "O(log n)",
@@ -73,6 +89,8 @@
     },
     {
         "question": "Which data structure is often used to implement a hash table?",
+        "sub-topic": "Hash Tables",
+        "difficulty": "Medium",
         "options": [
             "Array",
             "Linked List",
@@ -82,6 +100,8 @@
     },
     {
         "question": "What is the main advantage of using a hash table for data storage?",
+        "sub-topic": "Hash Tables",
+        "difficulty": "Medium",
         "options": [
             "Constant-time access",
             "Dynamic resizing",
@@ -91,6 +111,8 @@
     },
     {
         "question": "Which data structure is used to maintain a collection of elements with no specific order?",
+        "sub-topic": "Sets",
+        "difficulty": "Medium",
         "options": [
             "Heap",
             "Queue",
@@ -100,6 +122,8 @@
     },
     {
         "question": "What is the data structure that consists of a collection of key-value pairs?",
+        "sub-topic": "Dictionaries",
+        "difficulty": "Medium",
         "options": [
             "Queue",
             "Heap",
@@ -109,6 +133,8 @@
     },
     {
         "question": "Which data structure allows for efficient searching, insertion, and deletion of elements in a sorted order?",
+        "sub-topic": "Binary Search Trees",
+        "difficulty": "Medium",
         "options": [
             "Array",
             "Linked List",
@@ -118,6 +144,8 @@
     },
     {
         "question": "In a graph data structure, what are the nodes connected by?",
+        "sub-topic": "Graphs",
+        "difficulty": "Medium",
         "options": [
             "Edges",
             "Arrows",
@@ -127,6 +155,8 @@
     },
     {
         "question": "What is the data structure used to represent the shortest path between two nodes in a graph?",
+        "sub-topic": "Graphs",
+        "difficulty": "Medium",
         "options": [
             "Queue",
             "Stack",
@@ -136,6 +166,8 @@
     },
     {
         "question": "Which data structure is a collection of elements with no duplicates?",
+        "sub-topic": "Sets",
+        "difficulty": "Medium",
         "options": [
             "Heap",
             "Set",
@@ -145,6 +177,8 @@
     },
     {
         "question": "In a hash table, what is the purpose of the hash function?",
+        "sub-topic": "Hash Tables",
+        "difficulty": "Medium",
         "options": [
             "To store data",
             "To retrieve data",
@@ -154,6 +188,8 @@
     },
     {
         "question": "What data structure is used to implement a breadth-first search algorithm?",
+        "sub-topic": "Graphs",
+        "difficulty": "Medium",
         "options": [
             "Stack",
             "Queue",
@@ -163,11 +199,46 @@
     },
     {
         "question": "Which data structure is used for efficient retrieval of the maximum and minimum elements?",
+        "sub-topic": "Heaps",
+        "difficulty": "Medium",
         "options": [
             "Heap",
             "Stack",
             "Queue"
         ],
         "answer": "Heap"
+    },
+    {
+        "question": "What is the time complexity of finding the shortest path in a graph using Dijkstra's algorithm?",
+        "sub-topic": "Graphs",
+        "difficulty": "Hard",
+        "options": [
+            "O(V log V)",
+            "O(V^2)",
+            "O(E log V)"
+        ],
+        "answer": "O(E log V)"
+    },
+    {
+        "question": "In a balanced AVL tree, what is the worst-case time complexity for insertions and deletions?",
+        "sub-topic": "AVL Trees",
+        "difficulty": "Hard",
+        "options": [
+            "O(log N)",
+            "O(N)",
+            "O(N log N)"
+        ],
+        "answer": "O(log N)"
+    },
+    {
+        "question": "What is the time complexity of the QuickSort algorithm in the worst-case scenario?",
+        "sub-topic": "Sorting Algorithms",
+        "difficulty": "Hard",
+        "options": [
+            "O(N log N)",
+            "O(N^2)",
+            "O(log N)"
+        ],
+        "answer": "O(N^2)"
     }
 ]
